@@ -1,0 +1,93 @@
+# Dictionary
+
+Dictionary is a collection of key-value pairs. The key can be a string or a number. The value can be any type and mutable, duplicates are not allowed and the dictionarry is ordered by first created.
+
+## Create dictionary
+
+```js
+// Dictionary
+let dictionary_var = {"key1": 2, 10: "Hello"} // key can be string or number
+```
+
+## Get dictionary element
+
+```js
+let dictionary_var = {"key1": 2, 10: "Hello"}
+dictionary_var["key1"] // 2
+dictionary_var[10] // "Hello"
+```
+
+## Set dictionary element
+
+```js
+let dictionary_var = {"key1": 2, 10: "Hello"}
+dictionary_var["key1"] = 10
+dictionary_var[10] = "World"
+
+dictionary_var // {"key1": 10, 10: "World"}
+```
+
+## Get dictionary length
+
+```js
+let dictionary_var = {"key1": 2, 10: "Hello"}
+dictionary_var.length() // 2
+```
+
+## Remove element from dictionary at key
+
+```js
+let dictionary_var = {"key1": 2, 10: "Hello"}
+dictionary_var.remove("key1")
+
+dictionary_var // {10: "Hello"}
+```
+
+## Check if key is in dictionary
+
+```js
+let dictionary_var = {"key1": 2, 10: "Hello"}
+dictionary_var.contains("key1") // true
+dictionary_var.contains(10) // true
+dictionary_var.contains("key2") // false
+```
+
+## Get dictionary keys
+
+```js
+let dictionary_var = {"key1": 2, 10: "Hello"}
+dictionary_var.keys() // ["key1", 10] as array
+```
+
+## Get dictionary values
+
+```js
+let dictionary_var = {"key1": 2, 10: "Hello"}
+dictionary_var.values() // [2, "Hello"] as array
+```
+
+## Loop over dictionary
+
+```js
+// Loop over dictionary
+let dictionary_var = {"key1": 2, 10: "Hello"}
+for let key, value in dictionary_var:
+    print(key, value, dictionary_var[key])
+end
+// key1 2 2
+// 10 Hello Hello
+
+// Loop over dictionary keys
+for let key in dictionary_var:
+    print(key, dictionary_var[key])
+end
+// key1 2
+// 10 Hello
+```
+
+## Nested dictionary
+
+```js
+let dictionary_var = {"key1": 2, 10: {"key2": 3, 11: "World"}}
+dictionary_var[10]["key2"] // 3
+```
