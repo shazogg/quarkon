@@ -46,8 +46,6 @@ let first_name, last_name = "John", "Doe"
 first_name, last_name = "John" // Multiple variables with the same value
 
 first_name, last_name" = Jane", "Doe" // Multiple variables with different values
-
-
 ```
 
 ## Variable References
@@ -70,4 +68,5 @@ Variables can be deleted with the keyword `delete`.
 ```js
 let variable_name = VALUE
 delete variable_name
+variable_name // undefined
 ```

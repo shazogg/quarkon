@@ -3,88 +3,93 @@
 Try ... Catch is a way to handle errors in a more controlled way. It is a way to tell the program what to do when an error occurs.
 
 ```js
-try:
+try
   // code that might throw an error
-catch (e):
+catch e
   // code to handle the error
 end
 ```
 
 ```js
-try:
-  let a = 1 / 0;
-catch (e):
-  print(e);
+try
+  let a = 1 / 0
+catch e
+  print(e)
 end
+// "Division by zero"
 ```
 
-## Try .. Ctach .. Finally
+## Try .. Catch .. Finally
 
 ```js
-try:
+try
   // code that might throw an error
-catch (e):
+catch (
   // code to handle the error
-finally:
+finally
   // code that will always run
 end
 ```
 
 ```js
-try:
-  let a = 1 / 0;
-catch (e):
-  print(e);
-finally:
-  print("finally");
+try
+  let a = 1 / 0
+catch e
+  print(e)
+finally
+  print("finally")
 end
+// "Division by zero"
+// "finally"
 ```
 
-## Try .. Ctach .. Else
+## Try .. Catch .. Else
 
 ```js
-try:
+try
   // code that might throw an error
-catch (e):
+catch e
   // code to handle the error
-else:
+else
   // code that will only run if no error is thrown
 end
 ```
 
 ```js
-try:
-  let a = 1 / 1;
-catch (e):
-  print(e);
-else:
-  print("else");
+try
+  let a = 1 / 1
+catch e
+  print(e)
+else
+  print("else")
 end
+// "else"
 ```
 
-## Try .. Ctach .. Else .. Finally
+## Try .. Catch .. Else .. Finally
 
 ```js
-try:
+try
   // code that might throw an error
-catch (e):
+catch e
   // code to handle the error
-else:
+else
   // code that will only run if no error is thrown
-finally:
+finally
   // code that will always run
 end
 ```
 
-
 ```js
-try:
-  let a = 1 / 1;
-catch (e):
-  print(e);
-else:
-  print("else");
-finally:
-  print("finally");
+try
+  let a = 1 / 1
+catch e
+  print(e)
+else
+  print("else")
+finally
+  print("finally")
 end
+// "else"
+// "finally"
 ```

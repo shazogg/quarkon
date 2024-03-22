@@ -4,7 +4,7 @@ Execution flow is the control if instructions are executed or not, they are a bo
 
 ```js
 let a = 1
-if a == 1:
+if a == 1
     print("Hello")
 end
 // Hello
@@ -13,12 +13,12 @@ end
 ## If only
 
 ```js
-if true:
+if true
     print("Hello")
 end
 // Hello
 
-if false:
+if false
     print("Hello")
 end
 //
@@ -27,14 +27,14 @@ end
 ## If .. Else
 
 ```js
-if true:
+if true
     print("Hello")
 } else {
     print("World")
 }
 // Hello
 
-if false:
+if false
     print("Hello")
 } else {
     print("World")
@@ -45,23 +45,23 @@ if false:
 ## If .. Elif
 
 ```js
-if true:
+if true
     print("Hello")
-elseif false:
+elseif false
     print("World")
 end
 // Hello
 
-if false:
+if false
     print("Hello")
-elseif true:
+elseif true
     print("World")
 end
 // World
 
-if false:
+if false
     print("Hello")
-elseif false:
+elseif false
     print("World")
 end
 //
@@ -70,29 +70,29 @@ end
 ## If .. Elif .. Else
 
 ```js
-if true:
+if true
     print("Hello")
-elseif false:
+elseif false
     print("World")
-else:
+else
     print("!")
 end
 // Hello
 
-if false:
+if false
     print("Hello")
-elseif true:
+elseif true
     print("World")
-else:
+else
     print("!")
 end
 // World
 
-if false:
+if false
     print("Hello")
-elseif false:
+elseif false
     print("World")
-else:
+else
     print("!")
 end
 // !

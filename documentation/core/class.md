@@ -7,14 +7,14 @@ Class is a blueprint for creating objects. It defines the data and behavior of a
 A class is created using the `class` keyword.
 
 ```js
-class Person:
+class Person
   let name
 
-  function constructor(name):
+  function constructor(name)
     this.name = name
   end
 
-  function sayHello():
+  function sayHello()
     print("Hello, my name is " + this.name)
   end
 end
@@ -51,27 +51,27 @@ person.sayHello() // Dont work on classic dictionary
 A class can inherit from another class using the `extends` keyword. `super` keyword is used to call the parent class constructor and methods.
 
 ```js
-class Person:
+class Person
   let name
 
-  function constructor(name):
+  function constructor(name)
     this.name = name
   end
 
-  function sayHello():
+  function sayHello()
     print("Hello, my name is " + this.name)
   end
 end
 
-class Student extends Person:
+class Student extends Person
   let grade
 
-  function constructor(name, grade):
+  function constructor(name, grade)
     super(name)
     this.grade = grade
   end
 
-  function sayHello():
+  function sayHello()
     super.sayHello()
     print("I am in grade " + this.grade)
   end
@@ -83,25 +83,25 @@ end
 A subclass can override methods of the parent class.
 
 ```js
-class Person:
+class Person
   let name
 
-  function constructor(name):
+  function constructor(name)
     this.name = name
   end
 
-  function sayHello():
+  function sayHello()
     print("Hello, my name is " + this.name)
   end
 end
 
-class Student extends Person:
-  function constructor(name, grade):
+class Student extends Person
+  function constructor(name, grade)
     super(name)
     this.grade = grade
   end
 
-  function sayHello():
+  function sayHello()
     print("I am in grade " + this.grade)
   end
 end

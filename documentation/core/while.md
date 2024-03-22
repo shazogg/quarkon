@@ -3,9 +3,10 @@
 While loops are used to repeat a block of code while a condition is true.
 
 ```js
-while true:
+while true
     print("Hello")
 end
+// prints "Hello" forever
 ```
 
 ## While .. Else
@@ -13,11 +14,14 @@ end
 While loops can have an else block that is executed when the condition is false.
 
 ```js
-while true:
+i = 0
+while i < 3
     print("Hello")
-else:
+    i++
+else
     print("World")
 end
+// prints "Hello" three times and "World"
 ```
 
 ## Break
@@ -25,10 +29,11 @@ end
 Break is used to exit a loop.
 
 ```js
-while true:
+while true
     print("Hello")
     break
 end
+// prints "Hello" once
 ```
 
 ## Continue
@@ -36,9 +41,10 @@ end
 Continue is used to skip the rest of the loop and continue to the next iteration.
 
 ```js
-while true:
+while true
     print("Hello")
     continue
     print("World")
 end
+// prints "Hello" forever
 ```

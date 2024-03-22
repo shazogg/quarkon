@@ -62,8 +62,8 @@ array_var[-4:-2] // [6, 7]
 
 ```js
 let array_var = [4, 5, 6, 7, 8, 9]
-array_var.contains(5) // true
-array_var.contains(10) // false
+5 in array_var // true
+10 in array_var // false
 ```
 
 ## Concatenate arrays
@@ -80,7 +80,7 @@ array_var + array_var2 // [4, 5, 6, 7, 8, 9] not sorted
 let array_var = [4, 5, 6]
 
 // Loop through array
-for let value in array_var:
+for let value in array_var
     print(value)
 end
 // 4
@@ -88,7 +88,7 @@ end
 // 6
 
 // Loop through array with index
-for let index, value in array_var:
+for let index, value in array_var
     print(index, value, array_var[index])
 end
 // 0 4 4

@@ -29,6 +29,12 @@
 | ^= | Bitwise XOR and assign | x ^= 1 |
 | >>= | Bitwise right shift and assign | x >>= 1 |
 | <<= | Bitwise left shift and assign | x <<= 1 |
+| ++ | Post Increment | x++ |
+| -- | Post Decrement | x-- |
+| ++ | Pre Increment | ++x |
+| -- | Pre Decrement | --x |
+
+Pre Increment will increment the value of `x` before using it in the expression. Post Increment will increment the value of `x` after using it in the expression. The same applies to Pre Decrement and Post Decrement.
 
 ## Comparison Operators
 

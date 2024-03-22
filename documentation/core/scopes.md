@@ -7,13 +7,13 @@ Scope is a set of rules that determines the visibility of a variable. It defines
 Variables declared outside of a function are in the global scope. They are accessible from anywhere in the program.
 
 ```js
-let a = 1;
+let a = 1
 
-function foo():
-  print(a);
+function foo()
+  print(a)
 end
 
-foo(); // prints 1
+foo() // 1
 ```
 
 ## Local Scope
@@ -21,14 +21,14 @@ foo(); // prints 1
 Variables declared inside of a function are in the local scope. They are only accessible from within the function.
 
 ```js
-function foo():
-  let a = 1;
-  print(a);
+function foo()
+  let a = 1
+  print(a)
 end
 
-foo(); // prints 1
+foo() // 1
 
-print(a); // error: a is not defined
+print(a) // Error: a undefined
 ```
 
 ## Block Scope
@@ -36,43 +36,42 @@ print(a); // error: a is not defined
 Variables declared inside of a block are in the block scope. They are only accessible from within the block.
 
 ```js
-if (true):
-  let a = 1;
-  print(a);
+if true
+  let a = 1
+  print(a)
 end
 
-print(a); // error: a is not defined
+print(a) // Error: a undefined
 ```
 
 ## Nested Scope
 
-Variables declared in an inner scope are accessible from an outer scope.
+Variables declared in a scope are accessible in a child scope.
 
 ```js
-function foo():
-  let a = 1;
-  function bar():
-    print(a);
+function foo()
+  let a = 1
+  function bar()
+    print(a)
   end
-  bar();
+  bar()
 end
 
-foo(); // prints 1
+foo() // prints 1
 ```
 
 ## Shadowing
 
-Variables in an inner scope can have the same name as variables in an outer scope. This is called shadowing. The inner variable shadows the outer variable.
+Variables in an inner scope can have the same name as variables in an outer scope. This is called shadowing. The inner variable shadows the outer variable but does not affect it.
 
 ```js
+let a = 1
 
-let a = 1;
-
-function foo():
-  let a = 2;
-  print(a);
+function foo()
+  let a = 2
+  print(a)
 end
 
-foo(); // prints 2
-print(a); // prints 1
+foo() // prints 2
+print(a) // prints 1
 ```
