@@ -45,7 +45,7 @@ let first_name, last_name = "John", "Doe"
 
 first_name, last_name = "John" // Multiple variables with the same value
 
-first_name, last_name" = Jane", "Doe" // Multiple variables with different values
+first_name, last_name = "Jane", "Doe" // Multiple variables with different values
 ```
 
 ## Variable References

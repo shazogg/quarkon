@@ -10,7 +10,17 @@
 | / | Division | 1 / 1 |
 | % | Modulus | 1 % 1 |
 | ** | Exponentiation | 1 ** 1 |
-| // | Floor division | 1 // 1 |
+
+To get the floor division of two numbers, use the `math.floor` function.
+  
+```python
+import math
+
+x = 3
+y = 2
+
+print(math.floor(x / y)) // 1
+```
 
 ## Assignment Operators
 
@@ -23,7 +33,6 @@
 | /= | Divide and assign | x /= 1 |
 | %= | Modulus and assign | x %= 1 |
 | **= | Exponentiation and assign | x **= 1 |
-| //= | Floor division and assign | x //= 1 |
 | &= | Bitwise AND and assign | x &= 1 |
 | \|= | Bitwise OR and assign | x \|= 1 |
 | ^= | Bitwise XOR and assign | x ^= 1 |

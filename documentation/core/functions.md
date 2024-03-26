@@ -100,8 +100,12 @@ Arrow functions do not have their own `this` value, there is no context.
 
 ```js
 let add = (a, b) => a + b
+let subtract = (a, b) =>
+  return a - b
+end
 
-let result = add(1, 2)
+let result = add(1, 2) // 3
+let result2 = subtract(1, 2) // -1
 ```
 
 ## Function Overloading

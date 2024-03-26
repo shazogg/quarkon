@@ -19,7 +19,7 @@ export function goodbye()
 end
 
 // Default export
-exports {
+exports = {
   test: 30,
   z: x + y,
   j: x
