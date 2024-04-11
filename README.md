@@ -14,4 +14,4 @@ You can get the runtime at [quarkon-runtime](https://github.com/shazogg/quarkon-
 
 - I'm a student, not an expert, so if there's a problem or anything, I'd love to hear from you.
 
-- In the future, the Lexer and Parser will also be written in Rust.
+- In the future, the Lexer and Parser will also be written in C++.
